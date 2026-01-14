@@ -45,3 +45,22 @@ button {
   cursor: pointer;
 }
 
+/* Ensure touch-friendly targets on mobile */
+@media (max-width: 768px) {
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    min-height: 44px; /* iOS recommended touch target size */
+  }
+}
+
+/* Improve text rendering on mobile */
+@media (max-width: 768px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
