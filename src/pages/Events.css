@@ -186,10 +186,86 @@
   background: var(--bg-light);
 }
 
+.event-price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .event-price {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.border-price {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.payment-info,
+.contact-info {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.payment-info h4,
+.contact-info h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bank-details p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.bank-details strong {
+  color: var(--text-dark);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-details p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.whatsapp-icon {
+  font-size: 1rem;
+}
+
+.social-media {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.social-media strong {
+  color: var(--text-dark);
 }
 
 .btn-register {
@@ -279,9 +355,29 @@
     padding: 1.25rem;
   }
 
+  .event-price-section {
+    width: 100%;
+  }
+
   .event-price {
     font-size: 1.25rem;
     text-align: center;
+  }
+
+  .border-price {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .payment-info,
+  .contact-info {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .bank-details p,
+  .contact-details p {
+    font-size: 0.85rem;
   }
 
   .btn-register {
