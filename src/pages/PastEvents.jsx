@@ -2,68 +2,68 @@ import { useState } from 'react'
 import './PastEvents.css'
 
 const PastEvents = () => {
-  // Sample past events data with YouTube video IDs
+  // Past events data with YouTube video IDs
   // Replace these with actual YouTube video IDs from your channel
   const [pastEvents] = useState([
     {
       id: 1,
-      title: "Leadership Summit 2023",
-      location: "Lagos",
-      date: "June 2023",
+      title: "Excel Boot Camp 2023",
+      location: "Abuja",
+      date: "August 2023",
       videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-      description: "Highlights from our 2023 Leadership Summit featuring workshops, team activities, and inspiring keynote sessions.",
-      participants: 48,
-      highlights: ["Keynote speeches", "Team building exercises", "Leadership workshops", "Networking sessions"]
+      description: "Highlights from our 2023 Excel Boot Camp featuring transformational sessions, mentorship, character building workshops, and inspiring testimonies from participants who discovered their identity and purpose.",
+      participants: 95,
+      highlights: ["Identity discovery sessions", "Character building workshops", "Spiritual growth sessions", "Purpose clarity sessions", "Testimonies and transformation stories"]
     },
     {
       id: 2,
-      title: "Entrepreneurship Bootcamp 2023",
+      title: "Girls Timeout with Aunty Uloma - Q1 2023",
       location: "Abuja",
-      date: "July 2023",
+      date: "March 2023",
       videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-      description: "Watch how participants developed their startup ideas and presented them to a panel of mentors.",
-      participants: 42,
-      highlights: ["Startup pitches", "Mentor sessions", "Business plan development", "Demo day"]
+      description: "A powerful session where young women came together for mentorship, empowerment, and open dialogue. Watch as participants share their journey of discovering confidence and purpose.",
+      participants: 28,
+      highlights: ["Girls empowerment sessions", "Open dialogue sessions", "Confidence building activities", "Mentorship moments", "Sisterhood bonding"]
     },
     {
       id: 3,
-      title: "Creative Problem Solving Workshop 2023",
-      location: "Rivers",
-      date: "August 2023",
+      title: "Aunty Uloma Mentorship Hub - Cohort 2023",
+      location: "Multiple Locations",
+      date: "2023",
       videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-      description: "A comprehensive look at our design thinking workshop where students tackled real-world challenges.",
+      description: "A year-long mentorship journey where young people were guided through identity discovery, decision-making, and spiritual growth. See the transformation stories from our 2023 cohort.",
       participants: 45,
-      highlights: ["Design thinking sessions", "Case study analysis", "Prototype development", "Final presentations"]
+      highlights: ["Personal mentorship sessions", "Identity discovery workshops", "Decision-making guidance", "Spiritual growth sessions", "Transformation testimonies"]
     },
     {
       id: 4,
-      title: "Personal Development Intensive 2023",
-      location: "Kano",
-      date: "September 2023",
+      title: "Excel Boot Camp 2022",
+      location: "Abuja",
+      date: "August 2022",
       videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-      description: "Participants share their transformation journey and the skills they developed during this intensive program.",
-      participants: 38,
-      highlights: ["Goal setting workshops", "Mindfulness sessions", "Peer coaching", "Reflection activities"]
+      description: "Relive the powerful moments from our 2022 Excel Boot Camp where young people were equipped to excel in faith, character, knowledge, and purpose.",
+      participants: 85,
+      highlights: ["Faith development sessions", "Character excellence training", "Knowledge acquisition workshops", "Purpose discovery sessions", "Alumni testimonies"]
     },
     {
       id: 5,
-      title: "Tech Innovation Camp 2023",
-      location: "Ogun",
-      date: "October 2023",
+      title: "Girls Timeout - Special Edition 2023",
+      location: "Lagos",
+      date: "November 2023",
       videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-      description: "From coding basics to app development - see how students built their first tech projects.",
-      participants: 50,
-      highlights: ["Coding workshops", "App development", "Tech demos", "Innovation challenges"]
+      description: "A special edition of Girls Timeout in Lagos, empowering young women to walk boldly in their purpose and build strong character foundations.",
+      participants: 35,
+      highlights: ["Purpose discovery", "Character building", "Confidence workshops", "Peer support sessions", "Empowerment activities"]
     },
     {
       id: 6,
-      title: "Social Impact Summit 2023",
-      location: "Enugu",
-      date: "November 2023",
+      title: "Excel Boot Camp 2021",
+      location: "Abuja",
+      date: "August 2021",
       videoId: "dQw4w9WgXcQ", // Replace with actual YouTube video ID
-      description: "Watch how students developed and presented their social impact projects to community leaders.",
-      participants: 40,
-      highlights: ["Community projects", "Advocacy training", "Stakeholder meetings", "Impact presentations"]
+      description: "Highlights from our 2021 Excel Boot Camp, showcasing the impact of intentional mentorship and guidance in transforming young lives.",
+      participants: 75,
+      highlights: ["Transformational sessions", "Mentorship moments", "Character development", "Spiritual growth", "Life-changing testimonies"]
     }
   ])
 

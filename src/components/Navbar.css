@@ -21,6 +21,8 @@
   font-weight: 700;
   color: var(--primary-color);
   transition: color 0.2s;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .navbar-logo:hover {
@@ -143,13 +145,29 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .navbar-logo {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .logo-text {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+    max-width: 150px;
   }
 }
 

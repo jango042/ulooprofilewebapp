@@ -7,15 +7,15 @@ const Home = () => {
   const carouselImages = [
     {
       url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=600&fit=crop',
-      caption: 'Building Tomorrow\'s Leaders Today'
+      caption: 'Discovering Identity, Building Character, Fulfilling Purpose'
     },
     {
       url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=600&fit=crop',
-      caption: 'Transformative Learning Experiences'
+      caption: 'Excel Youth Leadership Initiative - Raising Purpose-Driven Leaders'
     },
     {
       url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=600&fit=crop',
-      caption: 'Empowering Teenagers Across Nigeria'
+      caption: 'Empowering Young People Across Nigeria'
     }
   ]
 
@@ -25,12 +25,11 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Empowering Teenagers Through
-            <span className="gradient-text"> Transformative Learning</span>
+            Excel Youth Leadership Initiative
           </h1>
           <p className="hero-subtitle">
-            Join us for life-changing camps and workshops designed to develop leadership, 
-            critical thinking, and personal growth outside the traditional classroom.
+            Guiding children, teenagers, and young adults to discover who they are, understand their worth, 
+            and develop the character, skills, and spiritual foundation required to thrive in life.
           </p>
           <div className="hero-buttons">
             <Link to="/events" className="btn btn-primary">
@@ -50,37 +49,80 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Mission Section */}
       <section className="about-section">
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2 className="section-title">About the Coach</h2>
+              <h2 className="section-title">Our Mission</h2>
               <p className="section-description">
-                With years of experience in youth development and education, I specialize in 
-                creating immersive learning experiences that go beyond traditional academics. 
-                My programs focus on developing essential life skills, leadership capabilities, 
-                and personal growth through hands-on activities, team challenges, and real-world 
-                problem-solving.
+                My mission is to guide children, teenagers, and young adults to discover who they are, 
+                understand their worth, and develop the character, skills, and spiritual foundation 
+                required to thrive in life. Through mentorship, coaching, teaching, and intentional guidance, 
+                I am committed to protecting young people from destructive influences, empowering them to 
+                make wise choices, and equipping them to fulfill their God-given purpose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Founder Section */}
+      <section className="about-section" style={{ backgroundColor: 'var(--bg-light)' }}>
+        <div className="container">
+          <div className="about-content">
+            <div className="about-text">
+              <h2 className="section-title">About the Founder</h2>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--primary-color)' }}>
+                Uloma Nkem Chukwu
+              </h3>
+              <p className="section-description">
+                Uloma Nkem Chukwu is the visionary founder of Aunty Uloma Mentorship Hub, a global platform 
+                created to help children, teenagers, and young adults understand who they are, grow in confidence, 
+                and walk boldly into their purpose.
               </p>
               <p className="section-description">
-                Each camp is carefully designed to challenge teenagers, build confidence, and 
-                foster connections with peers from different backgrounds. Whether it's leadership 
-                development, entrepreneurship, or creative problem-solving, participants leave 
-                with new perspectives and skills that last a lifetime.
+                With over 26 years of hands-on experience working with young people, Uloma has dedicated her life 
+                to guiding the next generation through the challenges of identity, peer pressure, self-worth, 
+                decision-making, and spiritual growth.
+              </p>
+              <p className="section-description">
+                As a certified life coach, trained youth minister, educationist, and pastor, she brings both 
+                professional expertise and deep compassion into every mentorship session. Her heart is to see 
+                young people become emotionally strong, morally grounded, and spiritually rooted.
+              </p>
+              <p className="section-description">
+                <strong>Education & Credentials:</strong> Uloma holds a B.Sc. in Biology Education, a Postgraduate 
+                Diploma in Management, and a Master's degree in Business Administration from the University of Calabar. 
+                She is also a Certified Life Coach from Transformational Academy, California (USA), and a trained Youth 
+                Minister and Coach from 180 Degree Church, Tulsa, Oklahoma (USA).
+              </p>
+              <p className="section-description">
+                <strong>Current Roles:</strong> Uloma currently serves as the Director of Youth and Teens Church at 
+                Family Worship Center, Abuja, where she oversees the teens and youth ministry across all church branches. 
+                She is the Chief Executive Officer of Ultimate You Consults, a life coaching and training company, and 
+                the founder of Excel Youth Camp—an annual transformational boot camp for teenagers and young adults 
+                established in 2018. She also serves as the Pastor coordinating the International Media Ministry of 
+                When Women Pray International (WWP).
+              </p>
+              <p className="section-description">
+                Driven by a strong mandate to see young people discover their identity and fulfill their God-given potential, 
+                Uloma believes that every child deserves the opportunity to become all that God has designed them to be—regardless 
+                of background or limitations. She believes that mentorship is not just about teaching—but about walking with 
+                young people until they become who God designed them to be.
               </p>
               <div className="stats-grid">
                 <div className="stat-item">
-                  <div className="stat-number">50+</div>
-                  <div className="stat-label">Events Organized</div>
+                  <div className="stat-number">26+</div>
+                  <div className="stat-label">Years of Experience</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">1000+</div>
-                  <div className="stat-label">Students Impacted</div>
+                  <div className="stat-number">2018</div>
+                  <div className="stat-label">Excel Camp Founded</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">36</div>
-                  <div className="stat-label">States Covered</div>
+                  <div className="stat-number">3</div>
+                  <div className="stat-label">Core Programs</div>
                 </div>
               </div>
             </div>
@@ -88,40 +130,70 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Programs Section */}
       <section className="features-section">
+        <div className="container">
+          <h2 className="section-title text-center">Our Programs</h2>
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">🏠</div>
+              <h3>Aunty Uloma Mentorship Hub</h3>
+              <p>A global platform designed to help children, teenagers, and young adults understand who they are, 
+              grow in confidence, and walk boldly into their purpose. Through personalized mentorship, we guide young 
+              people through identity, peer pressure, self-worth, decision-making, and spiritual growth.</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🔥</div>
+              <h3>Excel Boot Camp</h3>
+              <p>An annual transformational boot camp for teenagers and young adults established in 2018. Built on 
+              the vision of 2 Corinthians 8:7, raising young people who excel in faith, character, knowledge, and 
+              purpose. A life-changing experience that equips participants to fulfill their God-given potential.</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">👧</div>
+              <h3>Girls Timeout with Aunty Uloma</h3>
+              <p>A specialized program designed specifically for girls, providing a safe space for open dialogue, 
+              mentorship, and empowerment. Focused on building confidence, character, and helping young women navigate 
+              the unique challenges they face while discovering their purpose.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Makes Us Unique Section */}
+      <section className="features-section" style={{ backgroundColor: 'var(--bg-white)' }}>
         <div className="container">
           <h2 className="section-title text-center">What Makes Our Programs Unique</h2>
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">🎯</div>
-              <h3>Focused Learning</h3>
-              <p>Specialized programs targeting specific skills and competencies that matter most for future success.</p>
+              <h3>Identity Discovery</h3>
+              <p>Helping young people discover who they are and understand their God-given worth and purpose.</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">💪</div>
+              <h3>Character Development</h3>
+              <p>Building strong moral foundations and emotional strength through intentional guidance and mentorship.</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🙏</div>
+              <h3>Spiritual Foundation</h3>
+              <p>Rooting young people in faith and spiritual growth, equipping them to thrive in all areas of life.</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🛡️</div>
+              <h3>Protection & Guidance</h3>
+              <p>Protecting young people from destructive influences and empowering them to make wise choices.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🤝</div>
-              <h3>Peer Collaboration</h3>
-              <p>Work alongside motivated peers from diverse backgrounds, building lasting friendships and networks.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🌍</div>
-              <h3>Multiple Locations</h3>
-              <p>Events held across different states in Nigeria, making it accessible to teenagers nationwide.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">💡</div>
-              <h3>Real-World Application</h3>
-              <p>Learn through doing, with projects and challenges that mirror real-world scenarios.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">📈</div>
-              <h3>Personal Growth</h3>
-              <p>Develop confidence, resilience, and self-awareness through carefully structured experiences.</p>
+              <h3>Personalized Mentorship</h3>
+              <p>Walking with young people until they become who God designed them to be, not just teaching but journeying together.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🏆</div>
-              <h3>Proven Results</h3>
-              <p>Join hundreds of alumni who have gone on to achieve remarkable success in their chosen paths.</p>
+              <h3>Proven Track Record</h3>
+              <p>Over 26 years of experience dedicated to the training, development, and reformation of young people.</p>
             </div>
           </div>
         </div>
