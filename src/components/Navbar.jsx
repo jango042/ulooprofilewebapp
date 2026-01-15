@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <span className="logo-text">Coach Profile</span>
+          <span className="logo-text">Excel Youth Leadership Initiative</span>
         </Link>
         <button 
           className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`}

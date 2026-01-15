@@ -2,79 +2,85 @@ import { useState } from 'react'
 import './Events.css'
 
 const Events = () => {
-  // Sample events data - in a real app, this would come from an API
+  // Events data for Excel Youth Leadership Initiative programs
   const [events] = useState([
     {
       id: 1,
-      title: "Leadership Summit 2024",
-      location: "Lagos",
-      date: "June 15-20, 2024",
+      title: "Excel Boot Camp 2024",
+      location: "Abuja",
+      date: "August 2024",
       duration: "5 days",
-      description: "An intensive leadership development program focusing on communication, team building, and strategic thinking. Perfect for students looking to enhance their leadership capabilities.",
-      topics: ["Public Speaking", "Team Dynamics", "Strategic Planning", "Conflict Resolution"],
-      capacity: 50,
-      price: "₦450,000",
-      status: "open"
+      description: "Our annual transformational boot camp for teenagers and young adults. Built on the vision of 2 Corinthians 8:7, raising young people who excel in faith, character, knowledge, and purpose. A life-changing experience that equips participants to fulfill their God-given potential.",
+      topics: ["Identity Discovery", "Character Building", "Spiritual Growth", "Purpose Fulfillment", "Leadership Development"],
+      capacity: 100,
+      price: "Contact for Pricing",
+      status: "open",
+      program: "Excel Boot Camp"
     },
     {
       id: 2,
-      title: "Entrepreneurship Bootcamp",
-      location: "Abuja",
-      date: "July 10-14, 2024",
-      duration: "4 days",
-      description: "Learn the fundamentals of entrepreneurship through hands-on workshops, mentorship sessions, and real-world business challenges. Build your own startup idea from scratch.",
-      topics: ["Business Planning", "Marketing", "Finance Basics", "Pitching"],
-      capacity: 40,
-      price: "₦420,000",
-      status: "open"
+      title: "Aunty Uloma Mentorship Hub - Cohort 2024",
+      location: "Multiple Locations",
+      date: "Ongoing",
+      duration: "12 months",
+      description: "A global mentorship platform designed to help children, teenagers, and young adults understand who they are, grow in confidence, and walk boldly into their purpose. Through personalized mentorship sessions, we guide young people through identity, peer pressure, self-worth, decision-making, and spiritual growth.",
+      topics: ["Personal Mentorship", "Identity Discovery", "Decision Making", "Self-Worth", "Spiritual Guidance"],
+      capacity: 50,
+      price: "Contact for Pricing",
+      status: "open",
+      program: "Aunty Uloma Mentorship Hub"
     },
     {
       id: 3,
-      title: "Creative Problem Solving Workshop",
-      location: "Rivers",
-      date: "August 5-9, 2024",
-      duration: "5 days",
-      description: "Develop critical thinking and creative problem-solving skills through design thinking methodologies, case studies, and collaborative projects.",
-      topics: ["Design Thinking", "Innovation", "Analytical Skills", "Collaboration"],
-      capacity: 45,
-      price: "₦440,000",
-      status: "open"
+      title: "Girls Timeout with Aunty Uloma 2024",
+      location: "Abuja",
+      date: "Quarterly Sessions",
+      duration: "1 day per session",
+      description: "A specialized program designed specifically for girls, providing a safe space for open dialogue, mentorship, and empowerment. Focused on building confidence, character, and helping young women navigate the unique challenges they face while discovering their purpose.",
+      topics: ["Girls Empowerment", "Confidence Building", "Character Development", "Purpose Discovery", "Peer Support"],
+      capacity: 30,
+      price: "Contact for Pricing",
+      status: "open",
+      program: "Girls Timeout"
     },
     {
       id: 4,
-      title: "Personal Development Intensive",
-      location: "Kano",
-      date: "September 12-16, 2024",
-      duration: "4 days",
-      description: "Focus on personal growth, self-awareness, goal setting, and building resilience. Transform your mindset and unlock your potential.",
-      topics: ["Self-Awareness", "Goal Setting", "Resilience", "Time Management"],
-      capacity: 35,
-      price: "₦380,000",
-      status: "open"
+      title: "Excel Boot Camp - Lagos Edition",
+      location: "Lagos",
+      date: "December 2024",
+      duration: "5 days",
+      description: "A special edition of our transformational boot camp in Lagos. Empowering teenagers and young adults to excel in faith, character, knowledge, and purpose. Join us for an intensive week of growth, mentorship, and transformation.",
+      topics: ["Faith Development", "Character Excellence", "Knowledge Acquisition", "Purpose Clarity"],
+      capacity: 80,
+      price: "Contact for Pricing",
+      status: "open",
+      program: "Excel Boot Camp"
     },
     {
       id: 5,
-      title: "Tech Innovation Camp",
-      location: "Ogun",
-      date: "October 20-25, 2024",
-      duration: "5 days",
-      description: "Explore technology, coding, and innovation in a collaborative environment. No prior experience required - just curiosity and enthusiasm.",
-      topics: ["Coding Basics", "App Development", "AI & Machine Learning", "Tech Ethics"],
-      capacity: 50,
-      price: "₦480,000",
-      status: "open"
+      title: "Aunty Uloma Mentorship Hub - Online Sessions",
+      location: "Online",
+      date: "Monthly",
+      duration: "Ongoing",
+      description: "Virtual mentorship sessions available for young people across Nigeria and beyond. Access personalized guidance, mentorship, and support from anywhere. Perfect for those who cannot attend in-person sessions.",
+      topics: ["Virtual Mentorship", "Online Coaching", "Global Access", "Flexible Scheduling"],
+      capacity: 100,
+      price: "Contact for Pricing",
+      status: "open",
+      program: "Aunty Uloma Mentorship Hub"
     },
     {
       id: 6,
-      title: "Social Impact Summit",
-      location: "Enugu",
-      date: "November 8-12, 2024",
-      duration: "4 days",
-      description: "Learn how to create positive change in your community. Work on real social impact projects and develop skills in advocacy and community organizing.",
-      topics: ["Social Justice", "Community Organizing", "Advocacy", "Project Management"],
+      title: "Girls Timeout - Port Harcourt Edition",
+      location: "Rivers",
+      date: "October 2024",
+      duration: "1 day",
+      description: "A special edition of Girls Timeout in Port Harcourt. Empowering young women in Rivers State to discover their identity, build confidence, and walk in their purpose. A day of mentorship, empowerment, and sisterhood.",
+      topics: ["Girls Empowerment", "Identity Discovery", "Confidence Building", "Purpose Clarity"],
       capacity: 40,
-      price: "₦420,000",
-      status: "open"
+      price: "Contact for Pricing",
+      status: "open",
+      program: "Girls Timeout"
     }
   ])
 
@@ -90,8 +96,8 @@ const Events = () => {
     <div className="events-page">
       <div className="events-hero">
         <div className="container">
-          <h1>Upcoming Events & Camps</h1>
-          <p>Join us for transformative learning experiences across Nigeria</p>
+          <h1>Upcoming Events & Programs</h1>
+          <p>Join us for transformative mentorship and leadership experiences across Nigeria</p>
         </div>
       </div>
 
