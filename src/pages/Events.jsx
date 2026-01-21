@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import RegistrationModal from '../components/RegistrationModal'
 import './Events.css'
 
 const Events = () => {
@@ -97,12 +98,24 @@ const Events = () => {
   ])
 
   const [selectedState, setSelectedState] = useState('all')
+  const [selectedEvent, setSelectedEvent] = useState(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const states = ['all', ...new Set(events.map(event => event.location))]
 
   const filteredEvents = selectedState === 'all' 
     ? events 
     : events.filter(event => event.location === selectedState)
+
+  const handleRegisterClick = (event) => {
+    setSelectedEvent(event)
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+    setSelectedEvent(null)
+  }
 
   return (
     <div className="events-page">
@@ -232,7 +245,12 @@ const Events = () => {
                   </div>
                 </div>
                 {event.hasRegistration && (
-                  <button className="btn-register">Register Now</button>
+                  <button 
+                    className="btn-register"
+                    onClick={() => handleRegisterClick(event)}
+                  >
+                    Register Now
+                  </button>
                 )}
               </div>
             </div>
@@ -245,6 +263,13 @@ const Events = () => {
           </div>
         )}
       </div>
+
+      {/* Registration Modal */}
+      <RegistrationModal
+        event={selectedEvent}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   )
 }
