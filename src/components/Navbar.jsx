@@ -59,6 +59,15 @@ const Navbar = () => {
               Past Events
             </Link>
           </li>
+          <li>
+            <Link 
+              to="/camp-gallery" 
+              className={`navbar-link ${isActive('/camp-gallery') ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              Camp Gallery
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
