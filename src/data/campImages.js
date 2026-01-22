@@ -53,6 +53,22 @@ export const campImages = [
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997246/excel_camp_2025/image_001_k50cgj.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997245/excel_camp_2025/image_031_hpmdmc.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997220/excel_camp_2025/DSC_1436_yqczvj.jpg', tags: [] },
+
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997158/excel_camp_2025/image_003_cupjjn.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997130/excel_camp_2025/image_032_bpysg3.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997129/excel_camp_2025/image_033_h8rely.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997114/excel_camp_2025/image_035_dh8gu9.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997104/excel_camp_2025/image_036_gfs4tr.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997085/excel_camp_2025/image_034_ewgo2n.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997067/excel_camp_2025/image_039_fxawvn.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997059/excel_camp_2025/image_038_cgihc1.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997043/excel_camp_2025/image_040_rbfvw4.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997034/excel_camp_2025/image_042_fb2cgv.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997029/excel_camp_2025/DSC_1429_qp8eq9.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997026/excel_camp_2025/DSC_1424_gkh81r.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768996997/excel_camp_2025/DSC_1442_wkwsks.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768996992/excel_camp_2025/DSC_1438_nlejrv.jpg', tags: [] },
+  { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768996944/excel_camp_2025/DSC_1426_dodfoo.jpg', tags: [] },
   // Add all your other images here by copying URLs from Cloudinary Media Library
   // Just paste the full URLs - the code will extract Public IDs automatically!
   // 
