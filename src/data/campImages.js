@@ -1,18 +1,20 @@
 /**
- * Camp 2025 Images Data
+ * Camp 2025 Media Gallery Data
  * 
- * After uploading images to Cloudinary, add the public IDs here.
+ * Supports both images (Cloudinary) and videos (YouTube)
  * 
- * Format:
- * - publicId: The Cloudinary public ID (e.g., 'camp-2025/image1')
- * - tags: Array of tags for filtering (e.g., ['day1', 'activities'])
+ * Image Format:
+ * - publicId: Cloudinary URL or public ID
+ * - tags: Array of tags for filtering
  * 
- * Example:
- * export const campImages = [
- *   { publicId: 'camp-2025/day1/photo1', tags: ['day1', 'activities'] },
- *   { publicId: 'camp-2025/day1/photo2', tags: ['day1', 'group-photos'] },
- *   { publicId: 'camp-2025/day2/photo1', tags: ['day2', 'workshops'] },
- * ]
+ * Video Format:
+ * - youtubeUrl: Full YouTube URL or video ID
+ * - tags: Array of tags for filtering
+ * - title: Optional video title
+ * 
+ * Examples:
+ * Image: { publicId: 'https://res.cloudinary.com/.../image.jpg', tags: ['day1'] }
+ * Video: { youtubeUrl: 'https://www.youtube.com/watch?v=VIDEO_ID', tags: ['day1', 'highlights'] }
  */
 
 export const campImages = [
@@ -34,8 +36,6 @@ export const campImages = [
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997409/excel_camp_2025/image_014_n6nlee.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997407/excel_camp_2025/DSC_1431_rkvmsx.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997405/excel_camp_2025/image_019_nwcopc.jpg', tags: [] },
-
-
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997404/excel_camp_2025/image_008_xrwimj.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997404/excel_camp_2025/image_023_zowyll.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997403/excel_camp_2025/image_021_br4qsd.jpg', tags: [] },
@@ -53,7 +53,6 @@ export const campImages = [
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997246/excel_camp_2025/image_001_k50cgj.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997245/excel_camp_2025/image_031_hpmdmc.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997220/excel_camp_2025/DSC_1436_yqczvj.jpg', tags: [] },
-
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997158/excel_camp_2025/image_003_cupjjn.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997130/excel_camp_2025/image_032_bpysg3.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768997129/excel_camp_2025/image_033_h8rely.jpg', tags: [] },
@@ -69,13 +68,9 @@ export const campImages = [
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768996997/excel_camp_2025/DSC_1442_wkwsks.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768996992/excel_camp_2025/DSC_1438_nlejrv.jpg', tags: [] },
   { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768996944/excel_camp_2025/DSC_1426_dodfoo.jpg', tags: [] },
-  // Add all your other images here by copying URLs from Cloudinary Media Library
-  // Just paste the full URLs - the code will extract Public IDs automatically!
-  // 
-  // Format:
-  // { publicId: 'https://res.cloudinary.com/jango042/image/upload/v1768998239/excel_camp_2025/filename.jpg', tags: [] },
-  //
-  // Optional: Add tags to organize images
-  // { publicId: 'https://...', tags: ['day1', 'activities', 'group-photos'] },
+  
+  // Example YouTube video (uncomment and add your video URLs):
+  // { youtubeUrl: 'https://www.youtube.com/watch?v=VIDEO_ID', tags: ['highlights', 'day1'], title: 'Camp Highlights Day 1' },
+  // { youtubeUrl: 'https://youtu.be/VIDEO_ID', tags: ['highlights'], title: 'Camp Highlights' },
+  // Or just use the video ID: { youtubeUrl: 'VIDEO_ID', tags: ['highlights'] },
 ]
-

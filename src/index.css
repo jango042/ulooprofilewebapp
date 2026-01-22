@@ -5,18 +5,35 @@
 }
 
 :root {
-  --primary-color: #2563eb;
-  --primary-dark: #1e40af;
-  --secondary-color: #10b981;
-  --text-dark: #1f2937;
+  /* Vibrant, modern color palette for teenagers */
+  --primary-color: #6366f1; /* Indigo - modern and energetic */
+  --primary-dark: #4f46e5;
+  --primary-light: #818cf8;
+  --secondary-color: #ec4899; /* Pink - vibrant and engaging */
+  --accent-color: #f59e0b; /* Amber - warm and energetic */
+  --success-color: #10b981;
+  
+  /* Text colors with better contrast */
+  --text-dark: #111827;
+  --text-medium: #374151;
   --text-light: #6b7280;
-  --bg-light: #f9fafb;
+  --text-lighter: #9ca3af;
+  
+  /* Background colors */
+  --bg-light: #f8fafc;
   --bg-white: #ffffff;
+  --bg-gradient-start: #667eea;
+  --bg-gradient-end: #764ba2;
+  
+  /* Border and shadows */
   --border-color: #e5e7eb;
+  --border-light: #f3f4f6;
+  
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-colored: 0 10px 30px -5px rgba(99, 102, 241, 0.3);
 }
 
 body {

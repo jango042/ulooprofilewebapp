@@ -1,23 +1,28 @@
 import { Link } from 'react-router-dom'
 import ImageCarousel from '../components/ImageCarousel'
+import { campImages } from '../data/campImages'
 import './Home.css'
 
 const Home = () => {
-  // Carousel images - replace these URLs with your actual images
+  // Select 4 images from camp gallery for carousel
   const carouselImages = [
     {
-      url: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=600&fit=crop',
-      caption: 'Discovering Identity, Building Character, Fulfilling Purpose'
+      url: campImages[0]?.publicId || '',
+      caption: 'Excel Boot Camp 2025 - Discovering Identity, Building Character, Fulfilling Purpose'
     },
     {
-      url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=600&fit=crop',
+      url: campImages[8]?.publicId || '', // DSC_1449
       caption: 'Excel Youth Leadership Initiative - Raising Purpose-Driven Leaders'
     },
     {
-      url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=600&fit=crop',
-      caption: 'Empowering Young People Across Nigeria'
+      url: 'https://res.cloudinary.com/jango042/image/upload/v1768997404/excel_camp_2025/image_008_xrwimj.jpg',
+      caption: 'Empowering Young People Across Nigeria - Transformational Experiences'
+    },
+    {
+      url: campImages[30]?.publicId || '', // DSC_1434
+      caption: 'Building Confidence, Character, and Purpose - Join Our Community'
     }
-  ]
+  ].filter(img => img.url) // Filter out any empty URLs
 
   return (
     <div className="home">
